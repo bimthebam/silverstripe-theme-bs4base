@@ -1,0 +1,47 @@
+$navigation-sub-li-padding: 0 0 0 map-get($spacers, 3);
+$navigation-sub-a-padding: map-get($spacers, 2) map-get($spacers, 3) map-get($spacers, 2) 0;
+
+.sidebar {
+
+    display: none;
+
+    #navigation-sub {
+
+        @include hyphens();
+
+        ul {
+
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+
+                padding: $navigation-sub-li-padding;
+
+                a {
+                    display: block;
+                    padding: $navigation-sub-a-padding;
+                }
+
+            }
+
+        }
+
+        > ul {
+
+            border-top: $border-width solid $border-color;
+
+            > li {
+                border-bottom: $border-width solid $border-color;
+            }
+
+        }
+
+    }
+
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+
+}

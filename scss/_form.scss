@@ -1,0 +1,65 @@
+form {
+
+    .form-control, .form-check-input {
+
+        &.holder-required {
+            @extend .is-invalid;
+        }
+
+    }
+
+    .form-check {
+
+        &.optionset {
+
+            &.holder-validation, &.holder-required, &.holder-bad {
+
+                @extend .form-check-input.is-invalid;
+
+                .form-check-input {
+
+                    @extend .form-check-input.is-invalid;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .form-group {
+
+        &.optionset {
+
+            legend {
+                font-size: inherit;
+            }
+
+        }
+
+    }
+
+    .btn-toolbar {
+
+        display: flex;
+        flex-flow: row wrap;
+
+        > .btn {
+            margin: 0 0 map-get($spacers, 3) map-get($spacers, 3);
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+        }
+
+        > p {
+            flex-basis: 100%;
+            flex-shrink: 0;
+            margin-left: 0;
+        }
+
+    }
+
+}

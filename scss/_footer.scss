@@ -1,0 +1,9 @@
+$page-footer-margin-top: $page-header-margin-bottom !default;
+
+#page-footer {
+
+    border-top: $border-width solid $border-color;
+    margin-top: $page-footer-margin-top;
+    padding: map-get($spacers, 3) 0;
+
+}

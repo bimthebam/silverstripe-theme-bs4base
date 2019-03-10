@@ -1,0 +1,24 @@
+{
+    "name": "bimthebam/silverstripe-theme-bs4base",
+    "description": "A Bootstrap 4.x base theme for SilverStripe",
+    "type": "silverstripe-theme",
+    "keywords": ["silverstripe", "theme"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Christian Bünte (bimthebam)",
+            "homepage": "https://github.com/bimthebam"
+        }
+    ],
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": "4.0"
+    },
+	"extra": {
+        "expose": [
+            "css",
+            "vendor/jquery",
+            "vendor/bootstrap/dist/js"
+        ]
+	}
+}
