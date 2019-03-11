@@ -26,7 +26,7 @@ To use the theme just activate it in your `app/_config/theme.yml`:
 ```yaml
 SilverStripe\View\SSViewer:
   themes:
-    - 'bs4base'
+    - 'silverstripe-theme-bs4base'
     - '$default'
 ```
 
